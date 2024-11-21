@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Loiste</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonttien linkitys -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+
+    <!-- linkki bootstrap tyylitiedostoon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- lnkki omaan tyylitiedostoon -->
+    <link href="Loiste.css" rel="stylesheet">
+
+    <!-- bootstrapin javascript-kirjastoon -->
+    <script src="https://cdn.jadelivr.net/npm/bootstarp@5.3.3/dist/js/bootstrap.budle.min.js"></script>
+
+    <style>
+        /* Sujuva vieritys */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <main Class="container-fluid">
+
+        <!-- NAVIPALKKI -->
+        <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Tullarit.JPG" alt="Logo" style="width:40px;" class="rounded-pill me-2">
+                    Loiste
+                </a>
+
+
+
+        <!-- hampurilaiskuvio -->
+        <button class="navbar-toggler custom-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            
+                 
+                <li class="nav-item dropdown d-block d-sm-none">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">S2024</a></li>
+                      <li><a class="dropdown-item" href="#">K2024</a></li>
+                      <li><a class="dropdown-item" href="#">S2023</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <!-- Linkki, joka vie Syksy 2024 -osioon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#S2024">S2024</a>
+                  </li>
+                  <!-- Linkki, joka vie Kevät 2024 -osioon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#K2024">K2024</a>
+                  </li>
+                  <!-- Linkki, joka vie Syksy 2023 -osioon -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#S2023">S2023</a>
+                  </li>
+            </div>
+          </nav>      
+
+    
+    <div class="container-fluid mt-5 pt-3">
+        <br>
+        <h3>Loiste</h3>
+        <p>Jo eläköityneiden jumppahirmujen, yli 18v. harrastesarjan joukkue! Treenataan pari kertaa viikossa, pääasiassa omaksi iloksi! 💚 @tapiolanvoimistelijat.</p>
+    </div>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Tullarit2.JPG" alt="Tullarit2" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3><a href="#">Tullin piirin mestikset</a></h3>
+        <p><a href="#">Syksy 2023</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="tapanila.jpg" alt="tapanila" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3><a href="#">Tapanila Cup</a></h3>
+        <p><a href="#">Kevät 2024</a></p>
+        </div>
+    </div>
+      <div class="carousel-item">
+        <img src="Opinmäki.jpg" alt="Opinmäki" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3><a href="#">Tapiola Cup</a></h3>
+        <p><a href="#">Kevät 2024</a></p>
+        </div>
+    </div>
+      <div class="carousel-item">
+        <img src="Hämeenlinna.jpg" alt="Hämeenlinna" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3><a href="#">Hämeenlinna Cup</a></h3>
+        <p><a href="#">Syksy 2024</a></p>
+        </div>
+    </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+    
+  </div>
+<br>
+<!-- Syksy 2024 osio -->
+<div id="S2024">
+    <h2>Syksy 2024</h2>
+    <p>Tässä ovat syksyn 2024 tapahtumat...</p>
+  </div>
+  
+
+<div class="container mt-5">    
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Syksy2023</h4>
+        <img src="Turku.JPG" alt="Turku" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <h4>Loiste</h4>
+        <p>Joukkueemme on pieni mutta tiivis ryhmä, jossa keskitymme kehittymään yhdessä ja oppimaan uusia taitoja. Harjoituksissa panostamme yhteiseen harjoitteluun ja tuemme toisiamme. Kilpailemme tavoitteellisesti, mutta muistamme nauttia myös prosessista ja kehityksestämme.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Kevät2024</h4>
+        <img src="Tullarit4.JPG" alt="Tullarit4" class="img-fluid">
+      </div>
+    </div> 
+  </div>
+
+  <!-- Etusivu osio -->
+<div id="alku" class="container mt-5 pt-5">
+    <h1>Loiste</h1>
+    <p>Jo eläköityneiden jumppahirmujen, yli 18v. harrastesarjan joukkue! Treenataan pari kertaa viikossa, pääasiassa omaksi iloksi! 💚 @tapiolanvoimistelijat.</p>
+  </div>
+  
+  <!-- Tavoitteet osio -->
+  <div id="tavoitteet" class="container mt-5">
+    <h1>Tavoitteet</h1>
+    <p>Meidän tavoitteenamme on ennen kaikkea nauttia liikkumisesta ja yhdessäolosta. Vaikka moni meistä on jo eläköitynyt kilpavoimistelusta, liikunnan ilo ja haasteet vievät meitä edelleen eteenpäin. Loisteessa yhdistyvät hauskuus ja kehitys: treenaamme yhdessä, mutta kunnioitamme toistemme rajoja ja elämäntilanteita. Uskomme, että jokainen treeni on mahdollisuus nauttia, kehittyä ja ylläpitää hyvää fyysistä ja henkistä hyvinvointia.</p>
+  </div>
+  
+  <!-- Treenit osio -->
+  <div id="treenit" class="container mt-5">
+    <h1>Treenit</h1>
+    <p>Loisteen treenit pidetään kaksi kertaa viikossa, ja ne ovat suunniteltu niin, että ne sopivat kaiken tasoisille liikkujille. Vaikka voimme vielä tavoitella oman kehon rajoja ja voimistelutaitoja, tärkeintä on nauttia liikunnasta ja pysyä aktiivisina. Teemme treeneissä niin voimaharjoituksia kuin venyttelyä, ja välillä kokeilemme uusia liikuntalajeja ja tekniikoita.
+
+        Meidän valmentajamme ja tiimimme tukevat toisiaan ja kannustavat jokaista osallistujaa omassa kehityksessään. Yhteisöllisyys on Loisteen sydän – treeneissä ei ole kiirettä, ja kaikki saavat tehdä omaa vauhtiaan.</p>
+  </div>
+
+
+  <!-- Accordion Section -->
+<div id="accordionExample" class="accordion mt-5">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Joukkue 
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Joukue on perustettu vuonna 2015.</strong> Loiste on iloisen ja energisen jumppayhteisön kotipesä, jossa kokeneet ja intohimoiset liikkujat kokoontuvat yhdessä jakamaan hauskanpidon ja liikunnan riemun. Meidän joukkueemme koostuu yli 18-vuotiaista entisistä kilpavoimistelijoista, jotka haluavat edelleen treenata omaksi ilokseen ja pitää hauskaa yhdessä. Etsimme jatkuvasti uusia kasvoja, jotka haluavat liittyä joukkoomme ja kokea, kuinka liikunta voi olla hauskaa, terveellistä ja yhteisöllistä! 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Pisteitä
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Syksy2023 / Kevät 2024 / Syksy 2024.</strong>  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Joukkueen esittely
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Loiste on energinen ja lahjakas voimistelujoukkue, joka koostuu monipuolisista ja motivoituneista jäsenistä. Joukkueessa treenaa yhdeksän intohimoista voimistelijaa, jotka tekevät yhteistyötä harjoituksissa ja kisoissa aina parhaansa mukaan.</strong> <br> Joukkueen jäsenet ovat:
+          <br>
+          Laurel Matt
+          <br>
+          Juliet Lehtonen
+          <br>
+          Tuuli Oinonen
+          <br>
+          Viivi Länsmans
+          <br>
+          Lotta Tontt
+          <br>
+          Alina Andersson
+          <br>
+          Elin Dölker
+          <br>
+          Monica Plaoum
+          <br>
+          Helmi Huhtala
+          <br>
+          Aliina Lehtonen
+          <br>
+          Inka Lindström 
+          <br>
+          Alisa Lehtonen 
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Yhteystiedot osio -->
+  <div id="yhteystiedot" class="container mt-5">
+    <h1>Ota yhteyttä!</h1>
+    <p>Kiinnostuitko Loisteesta? Haluatko tulla kokeilemaan treenejä tai kysyä lisää joukkueestamme? Ota yhteyttä ja tule mukaan iloiseen porukkaamme!
+
+        Yhteystiedot:
+        Sähköposti: info@loiste.fi
+        Instagram: @loisteagg</p>
+  </div> 
+  
+
+  <div class="container mt-5">
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Aikaisempia kausia</h5>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="jumppa.jpg" class="jumppa" alt="jumppa">
+          <div class="card-body">
+            <h5 class="card-title">Tullin mestikset 2023</h5>
+            <p class="card-text">Tampere.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-12 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="taide.jpg" class="taide" alt="taide">
+          <div class="card-body">
+            <h5 class="card-title">Tullin mestikset 2023</h5>
+            <p class="card-text">Tampere.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="taide2.jpg" class="taide2" alt="taide2">
+          <div class="card-body">
+            <h5 class="card-title">Tullin mestikset 2023</h5>
+            <p class="card-text">Tampere.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+    <!-- Kevät 2024 osio -->
+    <div id="K2024">
+        <h2>Kevät 2024</h2>
+        <p>Alla kevään 2024 vapaaohjelma. Tapiola Cupissa Loiste sijoittui neljänneksi.</p>
+
+        <!-- Video Section -->
+  <div id="video" class="container mt-5">
+    <h3>Tapiola Cup 2024</h3>
+    <div class="ratio ratio-16x9">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/OFbQ6Rd-MfU?si=3doaWsYBRf4HVEtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+</div>
+    </div>
+    <br>
+    <br>
+
+  <!-- syksy 2023 osio -->
+  <div id="S2023">
+    <h2>Syksy 2023</h2>
+    <p>Alla on video syksyn 2024 ja 2023 keilaohjelmat sekä kevään 2024 vapaaohjelma.</p>
+
+   <!-- Nav tabs -->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#S2023" onclick="resetVideo('S2023')">S2023</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#S2024" onclick="resetVideo('S2024')">S2024</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#K2024" onclick="resetVideo('K2024')">K2024</a>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane container active" id="S2023">
+        S2023
+        <div class="ratio ratio-16x9">
+            <iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/rLWHg_ax5_k?si=R0Acl_ug2ji8H-mP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="tab-pane container fade" id="S2024">
+        S2024
+        <div class="ratio ratio-16x9">
+            <iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/Og6u0L6kQeI?si=fdsvat87_AkntH9B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="tab-pane container fade" id="K2024">
+        K2024
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OFbQ6Rd-MfU?si=3doaWsYBRf4HVEtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Funktio videon nollaamiseen
+    function resetVideo(tabId) {
+        // Hae kaikki iframe-elementit
+        var iframes = document.querySelectorAll('.video-iframe');
+        
+        // Käy läpi kaikki iframe-elementit ja pysäytä video
+        iframes.forEach(function(iframe) {
+            var src = iframe.src;
+            iframe.src = ''; // Tyhjennetään src
+            iframe.src = src; // Ladataan src uudelleen (tämä nollaa videon)
+        });
+
+        // Vaihda välilehti ja varmista, että näkyvä video päivitetään
+        var allTabs = document.querySelectorAll('.tab-pane');
+        allTabs.forEach(function(tab) {
+            if (tab.id !== tabId) {
+                tab.classList.remove('active', 'show');
+            } else {
+                tab.classList.add('active', 'show');
+            }
+        });
+    }
+</script>
+
+
+
+  
+</div>
+
+
+</div>
+  
+  <!-- Collapse Button and Content -->
+<button class="btn btn-outline-secondary mt-3" data-bs-toggle="collapse" data-bs-target="#demo">Näytä lisätiedot</button>
+
+<div id="demo" class="collapse mt-3">
+ <!-- Taulukko Section -->
+ <div id="yhteystiedot" class="container mt-5">
+    <h3>Yhteystiedot</h3>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th scope="col">Nimi</th>
+                <th scope="col">Puhelin</th>
+                <th scope="col">Sähköposti</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Loiste some</td>
+                <td>040 5623606</td>
+                <td>Loiste.agg@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Valmentaja</td>
+                <td>050 123456</td>
+                <td>valmentaja@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<br>
+<br>
+<!-- lomake -->
+<form onsubmit="return false">
+    <label for="fname" class="muoto">Etunimi:</label>
+    <input type="text" id="fname" name="fname" placeholder="Kirjoita etunimesi" required><br>
+
+    <label for="lname" class="muoto">Sukunimi:</label>
+    <input type="text" id="lname" name="lname" placeholder="Kirjoita sukunimesi" required><br>
+
+    <label for="phone" class="muoto">Puhelinnumero:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Kirjoita puhelinnumerosi" required><br>
+
+    <p>Valitse lempivälineesi:</p>
+    <input type="checkbox" id="väline1" name="pallo" value="pallo">
+    <label for="vehicle1"> Pallo</label><br>
+    <input type="checkbox" id="väline2" name="vanne" value="vanne">
+    <label for="vehicle2"> Vanne</label><br>
+    <input type="checkbox" id="väline3" name="keilat" value="keilat">
+    <label for="vehicle3"> Keilat</label><br>
+    <input type="checkbox" id="väline4" name="nauha" value="nauha">
+    <label for="vehicle4"> Nauha</label><br>
+    <br>
+    
+    <p>Valitse suosikkiosa-alueesi:</p>
+    <input type="radio" id="liike1" name="fav_liike" value="Tasapainot" required>
+    <label for="liike1">Tasapainot</label><br>
+    <input type="radio" id="liike2" name="fav_liike" value="Hypyt" required>
+    <label for="liike2">Hypyt</label><br>
+    <input type="radio" id="liike3" name="fav_liike" value="Vartalot" required>
+    <label for="liike3">Vartalot</label><br>
+    
+    <label for="palaute">Kerro lyhyesti voimistelutaustasi:</label><br>
+    <textarea id="palaute" name="palaute" rows="4" cols="50" placeholder="Kirjoita palautteesi tänne..."></textarea>
+    <br>
+    
+    <label for="kysymys">Mikä on lempi SM-tason joukkueesi?</label><br>
+    <select id="kysymys" name="suosikki_joukkue">
+        <option value="Minetit">Minetit</option>
+        <option value="ovo team">Ovo team</option>
+        <option value="gloria">Gloria</option>
+        <option value="sirius">Sirius</option>
+        <option value="sanix valens">Sanix Valens</option>
+    </select>
+    <br><br>
+    
+    <input type="button" value="Lähetä" onclick="tulostaTiedot()">
+    <input type="reset" value="Tyhjennä">
+</form>
+
+<!-- Div-elementti, johon tiedot tulostetaan -->
+<div id="tiedot"></div>
+
+<script>
+    function tulostaTiedot() {
+        // Haetaan lomakkeen tiedot
+        var etunimi = document.getElementById("fname").value;
+        var sukunimi = document.getElementById("lname").value;
+        var puhelin = document.getElementById("phone").value;
+        var palaute = document.getElementById("palaute").value;
+        var suosikkivaeri = document.getElementById("kysymys").value;
+        
+        // Haetaan valitut checkbox-arvot
+        var välineet = [];
+        document.querySelectorAll('input[type="checkbox"]:checked').forEach((el) => {
+            välineet.push(el.value);
+        });
+        
+        // Haetaan radiobutton-ryhmä ja tarkistetaan valinta
+        var radios = document.getElementsByName("fav_liike");
+        var favLiike = "";
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+                favLiike = radios[i].value;
+                break; // Lopetetaan silmukka valinnan löydyttyä
+            }
+        }
+
+        // Tulostetaan tiedot div-elementtiin
+        var tulostus = `
+            <h3>Yhteenveto</h3>
+            <p><strong>Etunimi:</strong> ${etunimi}</p>
+            <p><strong>Sukunimi:</strong> ${sukunimi}</p>
+            <p><strong>Puhelinnumero:</strong> ${puhelin}</p>
+            <p><strong>Palaute:</strong> ${palaute}</p>
+            <p><strong>Suosikkijoukkue:</strong> ${suosikkivaeri}</p>
+            <p><strong>Lempivälineet:</strong> ${välineet.join(", ") || "Ei valittu"}</p>
+            <p><strong>Suosikkiosa-alue:</strong> ${favLiike}</p>
+        `;
+        document.getElementById("tiedot").innerHTML = tulostus;
+    }
+</script>
+
+</main>
+</body>
+
+
+
+
+
+
+</html>
